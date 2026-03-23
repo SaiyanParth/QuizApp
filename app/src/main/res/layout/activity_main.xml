@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/kbc_bg"
+    tools:context=".MainActivity">
+
+    <!-- KBC Style Header -->
+    <View
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/kbc_blue_light"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCounterStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAUN BANEGA CROREPATI"
+        android:textColor="@color/kbc_gold"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/header_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header_bg" />
+
+    <!-- Timer Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_bg"
+        android:padding="16dp">
+
+        <!-- Days -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/kbc_gold"
+            app:cardBackgroundColor="@color/kbc_purple">
+
+            <TextView
+                android:id="@+id/tvDays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00\nDays"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Hours -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/kbc_gold"
+            app:cardBackgroundColor="@color/kbc_purple">
+
+            <TextView
+                android:id="@+id/tvHours"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00\nHours"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Minutes -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/kbc_gold"
+            app:cardBackgroundColor="@color/kbc_purple">
+
+            <TextView
+                android:id="@+id/tvMinutes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00\nMinutes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Seconds -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="8dp"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/kbc_gold"
+            app:cardBackgroundColor="@color/kbc_purple">
+
+            <TextView
+                android:id="@+id/tvSeconds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="00\nSeconds"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/kbc_timer_red"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET READY FOR THE CHALLENGE"
+        android:textColor="@color/kbc_gold_dark"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        android:letterSpacing="0.1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
