@@ -1,4 +1,4 @@
-# Bakchodi Quiz App 🎮
+# Quiz App 🎮
 
 A dynamic and interactive Android Quiz Application inspired by the KBC (Kaun Banega Crorepati) style, featuring real-time scoring, dynamic timers, and immersive audio effects.
 
